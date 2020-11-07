@@ -1,4 +1,4 @@
-import { combindReducers } from 'redux'
+import { combineReducers } from 'redux'
 import { call } from '../../utils/request'
 import url from '../../utils/url'
 import { actions as appActions } from './app'
@@ -174,7 +174,7 @@ const byId = (state = initialState.byId, action) => {
   }
 }
 
-const reducer = combindReducers({
+const reducer = combineReducers({
   allIds,
   byId
 })
