@@ -3,3 +3,5 @@
   * url
   * request
   * redux
+  * App.js Home Header
+  * Router
