@@ -17,10 +17,6 @@ const PostList = ({ user, posts, addDialogOpen, openAddDialog, closeAddDialog, c
     fetchPostList()
   }, [fetchPostList])
 
-  const handleSave = data => {
-    createPost(data.title, data.content)
-  }
-
   return (
     <div className="postList">
       <div>
@@ -29,7 +25,7 @@ const PostList = ({ user, posts, addDialogOpen, openAddDialog, closeAddDialog, c
           <button onClick={openAddDialog}>發帖</button>
         ) : null}
       </div>
-      {addDialogOpen && <PostEditor onSave={handleSave} onCancel={closeAddDialog} />}
+      {addDialogOpen && <PostEditor onSave={createPost} onCancel={closeAddDialog} />}
       <PostsView posts={posts} />
     </div>
   )
