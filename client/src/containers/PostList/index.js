@@ -8,7 +8,7 @@ import { getPostListWithAuthors } from '../../redux/modules'
 import { getLoggedUser } from '../../redux/modules/auth'
 
 import PostsView from './components/PostsView'
-import PostEditor from '../Post/components/PostEidtor'
+import PostEditor from '../Post/components/PostEditor'
 import './style.css'
 
 const PostList = ({ user, posts, addDialogOpen, openAddDialog, closeAddDialog, createPost, fetchPostList}) => {
