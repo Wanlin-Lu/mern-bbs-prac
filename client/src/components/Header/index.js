@@ -16,7 +16,7 @@ const Header = ({ username, location, onLogout }) => (
         </span>
       ) : (
           <span className="right-link">
-            <Link to={{ pathname="/auth", state: { from: location } }}>
+            <Link to={{ pathname:"/auth", state: { from: location } }}>
               登錄
             </Link>
           </span>

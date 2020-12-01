@@ -5,7 +5,7 @@ import { actions as appActions } from './app'
 
 const initialState = {
   byPost: {},
-  byId: {}
+  byId: {},
 }
 
 export const types = {
